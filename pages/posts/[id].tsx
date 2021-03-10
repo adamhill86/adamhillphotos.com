@@ -6,18 +6,14 @@ import Head from 'next/head';
 
 import Date from '../../components/date';
 import Layout from '../../components/layout';
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { BlogPost, getAllPostIds, getPostData } from '../../lib/posts';
 
 import utilStyles from '../../styles/utils.module.scss';
 
 export default function Post({
   postData,
 }: {
-  postData: {
-    title: string;
-    date: string;
-    contentHtml: string;
-  };
+  postData: BlogPost;
 }): JSX.Element {
   return (
     <Layout>
@@ -29,7 +25,7 @@ export default function Post({
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: postData.content }} />
       </article>
     </Layout>
   );
@@ -43,7 +39,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps<{ postData: BlogPost; }> = async ({ params }) => {
   const postData = await getPostData(params?.id as string);
   return {
     props: {

@@ -12,7 +12,7 @@ export interface FrontMatter {
   title: string;
 }
 
-export interface Post extends FrontMatter {
+export interface BlogPost extends FrontMatter {
   content: string;
 }
 
@@ -49,7 +49,7 @@ export function getAllPostIds(): { params: { id: string; } ; }[] {
   }));
 }
 
-export async function getPostData(id: string): Promise<Post> {
+export async function getPostData(id: string): Promise<BlogPost> {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
