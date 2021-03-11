@@ -6,13 +6,19 @@ import Link from 'next/link';
 import utilStyles from '../styles/utils.module.scss';
 import styles from './layout.module.scss';
 
-const name = '[Your Name]';
+const name = 'Adam Hill';
 export const siteTitle = 'Next.js Sample Website';
 
 export default function Layout({ children, home = false }: { children: React.ReactNode; home?: boolean; }): JSX.Element {
   return (
     <div className={styles.container}>
       <Head>
+        <link
+          href='https://fonts.gstatic.com'
+          rel='preconnect' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&family=Nothing+You+Could+Do&display=swap'
+          rel='stylesheet' />
         <link
           href='/favicon.ico'
           rel='icon' />
