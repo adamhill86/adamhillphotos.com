@@ -8,13 +8,13 @@ import styles from './nav.module.scss';
 export default function Nav(): JSX.Element {
   return (
     <nav className={styles.nav}>
-      <div className={styles['logo-container']}>
+      <div className={styles.logoContainer}>
         <Link href='/'>
           <a className={utilStyles.logo}>Adam Hill</a>
         </Link>
       </div>
-      <div className={styles['desktop-links-container']}>
-        <ul className={styles['link-list']}>
+      <div className={styles.desktopLinksContainer}>
+        <ul className={styles.linkList}>
           <li>
             <LinkTo href='/gallery'>Gallery</LinkTo>
           </li>
