@@ -3,11 +3,13 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import Nav from './nav/nav';
+
 import utilStyles from '../styles/utils.module.scss';
 import styles from './layout.module.scss';
 
 const name = 'Adam Hill';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Adam Hill | Photography';
 
 export default function Layout({ children, home = false }: { children: React.ReactNode; home?: boolean; }): JSX.Element {
   return (
@@ -37,6 +39,7 @@ export default function Layout({ children, home = false }: { children: React.Rea
           content='summary_large_image'
           name='twitter:card' />
       </Head>
+      <Nav />
       <header className={styles.header}>
         {home
           ? (
