@@ -1,7 +1,14 @@
+// TODO: Figure out how to setup path aliasing in Next
+@import '../../styles/variables';
+
 .nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
 }
 
 .logoContainer {
@@ -17,4 +24,8 @@
 .linkList {
   display: flex;
   justify-content: space-between;
+
+  a {
+    color: $copy-color;
+  }
 }

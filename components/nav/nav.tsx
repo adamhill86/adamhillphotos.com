@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import LinkTo from '../link-to/link-to';
 
 import utilStyles from '../../styles/utils.module.scss';
@@ -9,9 +7,11 @@ export default function Nav(): JSX.Element {
   return (
     <nav className={styles.nav}>
       <div className={styles.logoContainer}>
-        <Link href='/'>
-          <a className={utilStyles.logo}>Adam Hill</a>
-        </Link>
+        <LinkTo
+          className={utilStyles.logo}
+          href='/'>
+          Adam Hill
+        </LinkTo>
       </div>
       <div className={styles.desktopLinksContainer}>
         <ul className={styles.linkList}>
