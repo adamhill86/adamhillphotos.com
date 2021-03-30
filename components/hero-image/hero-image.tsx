@@ -1,10 +1,8 @@
 import Image from 'next/image';
 
-import styles from './hero-image.module.scss';
-
 export default function HeroImage(): JSX.Element {
   return (
-    <div className={styles.heroImage}>
+    <div className='relative h-80'>
       <Image
         alt='Mountain sunset'
         layout='fill'
