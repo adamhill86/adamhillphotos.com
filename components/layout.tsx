@@ -19,15 +19,6 @@ export default function Layout({ children, home = false }: { children: React.Rea
       <HeroImage />
       <div className={styles.container}>
         <Head>
-          <link
-            href='https://fonts.gstatic.com'
-            rel='preconnect' />
-          <link
-            href='https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Inter:wght@400;700&family=Nothing+You+Could+Do&display=swap'
-            rel='stylesheet' />
-          <link
-            href='/favicon.ico'
-            rel='icon' />
           <meta
             content='Learn how to build a personal website using Next.js'
             name='description' />
