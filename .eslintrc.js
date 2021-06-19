@@ -47,6 +47,7 @@ module.exports = {
     ])],
     'node/no-sync': 'off',
     'require-unicode-regexp': 'off',
-    'unicorn/prevent-abbreviations': 'off'
+    'unicorn/prevent-abbreviations': 'off',
+    'unicorn/prefer-node-protocol': 'off',
   },
 };
