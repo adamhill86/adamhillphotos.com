@@ -1,7 +1,10 @@
 const rules = require('@perfective/eslint-config-react/rules');
 
 module.exports = {
-  extends: ['@perfective/eslint-config-react'],
+  extends: [
+    '@perfective/eslint-config-react', 
+    'plugin:@next/next/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',

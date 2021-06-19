@@ -15,6 +15,7 @@ export const siteTitle = 'Adam Hill | Photography';
 export default function Layout({ children, home = false }: { children: React.ReactNode; home?: boolean; }): JSX.Element {
   return (
     <>
+      {/* TODO: Move the font stuff out of this component */}
       <HeroImage />
       <div className={styles.container}>
         <Head>

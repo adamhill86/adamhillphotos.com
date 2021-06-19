@@ -7,7 +7,7 @@
     "build": "next build",
     "build:ssg": "next build && next export",
     "start": "next start",
-    "lint": "eslint --fix --cache --config .eslintrc.js ./"
+    "lint": "eslint --fix --cache --config .eslintrc.js ./",
   },
   "dependencies": {
     "date-fns": "^2.22.1",
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.5",
+    "@next/eslint-plugin-next": "^11.0.0",
     "@perfective/eslint-config-react": "^0.4.0",
     "@types/node": "^15.12.3",
     "@types/react": "^17.0.11",
