@@ -30,6 +30,7 @@
     "autoprefixer": "^10.2.6",
     "classnames-ts": "^1.0.2",
     "eslint": "^7.29.0",
+    "eslint-config-next": "^11.0.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-array-func": "^3.1.7",
     "eslint-plugin-cypress": "^2.11.3",
