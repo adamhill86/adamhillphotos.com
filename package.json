@@ -7,7 +7,7 @@
     "build": "next build",
     "build:ssg": "next build && next export",
     "start": "next start",
-    "lint": "eslint --fix --cache --config .eslintrc.js ./",
+    "lint": "eslint --fix --cache --config .eslintrc.js ./"
   },
   "dependencies": {
     "date-fns": "^2.22.1",
