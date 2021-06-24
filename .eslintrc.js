@@ -20,7 +20,7 @@ module.exports = {
       'all',
       {
         enforceForArrowConditionals: false,
-        ignoreJSX: 'multi-line'
+        ignoreJSX: 'all'
       }
     ],
     '@typescript-eslint/require-await': 'off',
